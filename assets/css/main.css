@@ -71,6 +71,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+iframe {
+	border-radius: 3%;
+	/*display: block;*/
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2597,7 +2602,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-			object-fit: fill;
+			object-fit: contain;
 		}
 
 			.image.fit img {
@@ -3507,7 +3512,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				padding-top: 0;
+				padding-top: 2em;
+				padding-bottom: 2em;
 			}
 
 		}
@@ -3551,7 +3557,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #020107bc;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3764,7 +3770,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(204, 186, 186, 0.35);
+			color: rgba(204, 186, 186, 0.537);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3788,7 +3794,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #6b657a;
 			}
 
 			#sidebar nav a:after {
@@ -3804,7 +3810,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgba(255, 255, 255, 0.726);
 			}
 
 			#sidebar nav a.active {
